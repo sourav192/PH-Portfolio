@@ -1,0 +1,76 @@
+.awards {
+  margin-top: 80px;
+  position: relative;
+}
+.awards::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(200px);
+  z-index: -1;
+}
+.awards .heading {
+}
+.awards .heading h1 {
+  text-align: center;
+}
+.awards .heading p {
+  text-align: center;
+}
+.awards .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 20px;
+  padding: 10px 20px;
+}
+.awards .card {
+  display: flex;
+  gap: 80px;
+  background: #000;
+  color: white;
+  padding: 30px 60px;
+  width: 100%;
+  justify-content: space-between;
+}
+.awards .card div {
+}
+.awards .card div h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.awards .card div p {
+  max-width: 550px;
+  color: var(--text-secondary-color);
+  margin: 20px 0 0 0;
+  line-height: 1.6rem;
+}
+
+.awards .card div p.card-flex-subheading {
+  color: var(--text-primary-color);
+}
+
+/* Section Responsive */
+
+@media (max-width: 672px) {
+  .awards .cards {
+    padding: 10px 20px;
+  }
+  .awards .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 30px 20px;
+  }
+  .awards .card div h2,
+  .awards .card div p {
+    text-align: center;
+  }
+}

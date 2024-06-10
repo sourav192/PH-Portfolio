@@ -1,0 +1,133 @@
+/* Section header start */
+.about-me {
+  margin-top: 80px;
+}
+.about-me .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+.about-me .header .headline {
+  position: relative;
+}
+.section-title {
+  color: var(--text-primary-color);
+  font-size: 40;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.section-subtitle {
+  color: var(--text-secondary-color);
+}
+
+.about-me .header .ratings {
+}
+.about-me .header .ratings ul {
+  display: flex;
+  justify-content: end;
+}
+.about-me .header .ratings ul li {
+  color: var(--accent-color);
+}
+.about-me .header .ratings p {
+  text-align: right;
+  color: #dedede;
+}
+
+/* Section header end */
+
+/* Section container start */
+
+.about-me-container {
+  margin-top: 30px;
+  background: rgb(255, 177, 71);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 177, 71, 0.14346988795518212) 0%,
+    rgba(255, 108, 99, 0.15747549019607843) 51%,
+    rgba(184, 106, 223, 0.14346988795518212) 100%
+  );
+  width: 100%;
+  padding: 80px 80px;
+}
+.about-me-container .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-me-contents {
+}
+.about-me-contents h1 {
+  margin: 20px 0;
+}
+.italicz {
+  font-style: italic;
+}
+.about-me-contents p {
+  color: var(--subheading);
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 1.7rem;
+}
+.about-me-skills {
+}
+.about-me-skills .about-me-skill {
+  border-bottom: 1px solid var(--text-secondary-color);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 30px 0;
+}
+.about-me-skills div div {
+}
+.about-me-skills div div span {
+  color: var(--subheading);
+  display: flex;
+  text-align: right;
+}
+.about-me-skills div div h1 {
+}
+
+/* Section Responsive */
+@media (max-width: 980px) {
+  .about-me .header .ratings ul {
+    justify-content: center;
+  }
+  .about-me .header {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .about-me .header .headline h1,
+  .about-me .header .headline p,
+  .about-me .header .ratings p {
+    text-align: center;
+  }
+  .about-me-container .container {
+    justify-content: center;
+  }
+  .about-me-container {
+    padding: 20px 15px;
+  }
+  .about-me .header .headline::before {
+    position: absolute;
+    content: "";
+    bottom: -13px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 2px;
+    background: var(--accent-color);
+  }
+  .about-me-contents .italicz {
+    text-align: center;
+  }
+  .about-me-contents .section-title {
+    text-align: center;
+  }
+  .about-me-contents p.desc {
+    text-align: center;
+  }
+}

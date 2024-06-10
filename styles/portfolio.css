@@ -1,0 +1,122 @@
+.portfolio {
+  margin-top: 80px;
+  padding: 10px 20px;
+}
+.portfolio .headline {
+}
+.portfolio .headline h1 {
+  text-align: center;
+}
+.portfolio .headline p {
+  text-align: center;
+}
+.portfolio .categories {
+  margin-top: 20px;
+}
+.portfolio .categories ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.portfolio .categories ul li {
+  background: #000;
+  color: white;
+  padding: 10px 15px;
+}
+.portfolio .categories ul li:nth-child(2) {
+  background: var(--accent-color);
+  color: white;
+  padding: 10px 15px;
+}
+
+.portfolio .showcases {
+  margin-top: 60px;
+}
+.portfolio .showcases .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.portfolio .showcases .second-card {
+  margin-top: 40px;
+  flex-direction: row-reverse;
+}
+.portfolio .showcases .card .card-img {
+  width: 50%;
+  border-radius: 10px;
+}
+.portfolio .showcases .second-card .card-img {
+  width: 50%;
+  border-radius: 10px;
+}
+.portfolio .showcases .card div img {
+  width: 100%;
+  border-radius: 10px;
+}
+.portfolio .showcases .card div h1 {
+  margin: 15px 0;
+}
+.portfolio .showcases .card div .italicz {
+  color: var(--subheading);
+}
+.portfolio .showcases .card div p.section-subtitle span {
+  color: var(--text-secondary-color);
+  max-width: 500px;
+}
+.portfolio .showcases .card div p.section-subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.before-btn {
+  display: flex;
+}
+.card-btn {
+  margin-top: 20px;
+  padding: 10px 36px;
+  background: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.card-btn:hover {
+  background: var(--accent-color);
+  transition: background-color 0.5s ease;
+}
+/* Responsive */
+
+@media (max-width: 672px) {
+  .portfolio .showcases .card {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .portfolio .showcases .second-card {
+    margin-top: 80px;
+  }
+  .portfolio .showcases .card .card-contents {
+    flex-direction: column;
+  }
+  .portfolio .showcases .card .italicz {
+    text-align: center;
+  }
+
+  .portfolio .showcases .card .section-title {
+    text-align: center;
+  }
+  .portfolio .showcases .card .section-subtitle {
+    text-align: center;
+  }
+  .portfolio .showcases .card .card-img {
+    width: 100%;
+  }
+  .portfolio .showcases .seconds-card .card-img {
+    width: 100%;
+  }
+  .before-btn {
+    justify-content: center;
+    align-items: center;
+  }
+}

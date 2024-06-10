@@ -1,0 +1,102 @@
+.contact {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact div p.italicz {
+  color: var(--subheading);
+  text-align: center;
+}
+.contact div h1.section-title {
+  text-align: left;
+  margin: 15px 0 25px 0;
+}
+.contact-form {
+  background: #34261b;
+  padding: 30px 60px;
+  width: 100%;
+  max-width: 1000px;
+}
+.contact-form form {
+}
+.contact-form form .form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+.contact-form form .form-group .form-field {
+  flex: 1;
+  min-width: 200px;
+}
+.contact-form form .form-group .form-field input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--subheading);
+  outline: 0;
+  width: 100%;
+}
+.contact-form form .form-group .form-field label {
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--subheading);
+}
+.contact-form form .form-group .full-width {
+  flex-direction: column;
+}
+.form-field #message {
+  flex: 1;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--subheading);
+}
+form .form-group .submit-btn {
+  background: var(--accent-color);
+  color: var(--text-primary-color);
+  padding: 15px 40px;
+  margin: 15px 0;
+}
+form .form-group .submit-btn:hover {
+  background: #000;
+  color: var(--text-primary-color);
+  transition: background-color 0.5s ease;
+}
+.my-mails {
+  margin-top: 20px;
+}
+.my-mails div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.my-mails div i {
+  font-size: 30px;
+  color: var(--accent-color);
+  background: #000000;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.my-mails div i:hover {
+  color: white;
+}
+.contact div h1.section-title {
+  text-align: center;
+}
+/* Section Responsive */
+
+@media (max-width: 672px) {
+  .contact-form {
+    margin: 10px;
+  }
+  .contact div h1.section-title {
+    text-align: center;
+  }
+  form .form-group .submit-btn {
+    width: 100%;
+  }
+}
